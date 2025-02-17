@@ -3,14 +3,14 @@ import '../App.css';
 import { Education, Suitcase } from "./Icons";
 
 export const Experiance = () => {
-    const TimelineItem = ({ title, company, duration, icon }) => {
+    const TimelineItem = ({ title, company,description, duration, icon }) => {
         return (
           <div className="timeline-item">
             <div className="timeline-icon">{icon}</div>
             <div className="timeline-content">
               <h3>{title} <span className="duration">({duration})</span></h3>
               <h4>{company}</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              
             </div>
           </div>
         );

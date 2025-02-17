@@ -5,6 +5,7 @@ import ContactUs from './Components/ContactUs';
 import { Experiance } from './Components/Experiance';
 import { Header } from './Components/Header';
 import { Hero } from './Components/Hero';
+import Projects from './Components/Projects';
 import { Skills } from './Components/Skills';
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       <Hero></Hero>
       <AboutUs></AboutUs>
       <Skills></Skills>
-      <Experiance></Experiance>
+      <Experiance></Experiance> 
+      <Projects></Projects>
       <ContactUs></ContactUs>
     </div>
   );

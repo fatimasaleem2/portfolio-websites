@@ -1,18 +1,23 @@
 import { motion } from "framer-motion";
 import "../App.css";
-import { AboutUs, ContactUs, Experience, Home, Location, Skills, Suitcase } from "./Icons";
+import { AboutUs, ContactUs, Experience, Home, Location, Projects, Skills, Suitcase } from "./Icons";
 import { useEffect, useState } from "react";
 
 
-const sections = ["home", "about", "skills", "experiance", "contact-us"];
+const sections = ["home", "about", "skills", "experiance", "projects", "contact-us"];
 export const Header = () => {
   const [activeSection, setActiveSection] = useState("");
 
 
   const handleScroll = (section) => {
     setActiveSection(section);
-    document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+    if (section === "home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+    }
   };
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,6 +52,7 @@ export const Header = () => {
             <li onClick={() => handleScroll("about")}>About Us</li>
             <li onClick={() => handleScroll("skills")}>Skills</li>
             <li onClick={() => handleScroll("experiance")}>Experience</li>
+            <li onClick={() => handleScroll("projects")}>Projects</li>
             <li onClick={() => handleScroll("contact-us")}>Contact Us</li>
           </ul>
         </nav>
@@ -70,6 +76,7 @@ export const Header = () => {
             {section === "about" && <AboutUs />}
             {section === "skills" && <Skills />}
             {section === "experiance" && <Experience />}
+            {section === "projects" && <Projects />}
             {section === "contact-us" && <ContactUs />}
           </li>
         ))}
