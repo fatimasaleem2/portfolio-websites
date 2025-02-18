@@ -26,6 +26,9 @@
   text-align: center;
   color: white;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .desktop-header nav ul {
@@ -53,6 +56,10 @@
 
 .line {
   color: var(--white-color);
+}
+
+.active p{
+  color: #00c0ff;
 }
 
 /* Mobile Bottom Navigation */
@@ -540,6 +547,7 @@ textarea {
   .hero-image img {
     width: 200px;
     height: 200px;
+    margin-top: 20px;
   }
 
   .info-item {
@@ -590,7 +598,7 @@ textarea {
   }
 
   .form-row {
-    display: block;
+    display: grid;
   }
 
   .contact-info {
@@ -604,6 +612,7 @@ textarea {
   }
   .desktop-header {
     display: none;
+
   }
 
   .mobile-header {

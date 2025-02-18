@@ -32,9 +32,7 @@ export const Hero = () => {
                 <div className="hero-text">
                     <h1>Fatima <span className="hero-text-2">Saleem</span></h1>
                     <p>Frontend Developer</p>
-                    <button onClick={handleScrollToContact} className="main-button">
-                        <span>Get Connected</span>
-                    </button>
+                    <button onClick={handleScrollToContact}  className="main-button"><a>Get Connected</a></button>
                 </div>
                 <motion.div
                     className="hero-image"
