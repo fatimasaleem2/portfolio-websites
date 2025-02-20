@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import '../App.css';
 import { motion } from "framer-motion";
-import { Close, Location, Message, Phone } from './Icons';
+import { Close, Facebook, Linkedin, Location, Message, Phone } from './Icons';
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({
@@ -110,7 +110,23 @@ const ContactUs = () => {
                     </form>
                 </div>
             </div>
+            <div className='footer'>
+                <div className='footer-item' >
+                    <p>© fatima-saleem-portfolio.com</p>
+                    <div className='line'>
+                      |
+                    </div>
+                    <a href='https://www.facebook.com/fatima.saleeem112'>
+                    <Facebook></Facebook>
+                    </a>
+                    <a href='https://www.linkedin.com/in/fatima-saleem-221b3a253/'>
+                    <Linkedin></Linkedin>
+                    </a>
+                    </div> 
+
+            </div>
         </section>
+
     );
 };
 

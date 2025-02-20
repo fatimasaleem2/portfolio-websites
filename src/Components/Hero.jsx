@@ -32,6 +32,7 @@ export const Hero = () => {
                 <div className="hero-text">
                     <h1>Fatima <span className="hero-text-2">Saleem</span></h1>
                     <p>Frontend Developer</p>
+                    <p className="hero-para">Passionate about designing web applications and bringing them <br></br> to life through code, as well as developing mobile applications.</p>
                     <button onClick={handleScrollToContact}  className="main-button"><a>Get Connected</a></button>
                 </div>
                 <motion.div

@@ -19,7 +19,7 @@ export const AboutUs = () => (
 
                     }}
                 >
-                    <img src={AboutUsImage} alt="About us" />
+                    <img style={{height : 450}} src={AboutUsImage} alt="About us" />
                 </motion.div>
                 <div className="about_content">
                     <h3>About Me</h3>

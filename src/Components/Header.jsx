@@ -1,5 +1,3 @@
-
-
 import { motion } from "framer-motion";
 import "../App.css";
 import { AboutUs, ContactUs, Experience, Home, Skills, Projects, Logo } from "./Icons";
@@ -53,7 +51,6 @@ export const Header = () => {
         transition={{ duration: 0.5 }}
       >
         <img style = {{ cursor: 'pointer'}}onClick={() => handleScroll("home")} src={PortfolioLogo}></img>
-      
         <nav>
           <ul>
             <li onClick={() => handleScroll("home")} className={activeSection === "home" ? "active" : ""}>

@@ -59,7 +59,8 @@
 }
 
 .active p{
-  color: #00c0ff;
+  color: var(--extra-color);
+  border-bottom: 1px solid #00c0ff;
 }
 
 /* Mobile Bottom Navigation */
@@ -127,10 +128,17 @@
 
 .hero-text p {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 20px;
   color: var(--white-color);
 }
+
+.hero-text .hero-para{
+  font-size: 16px;
+  color: var(--main-color);
+  line-height: 30px;
+  font-weight: 500;
+} 
 
 .heading-text {
   font-size: 24px;
@@ -149,7 +157,7 @@
 }
 
 .main-button a {
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
 
 }
@@ -187,11 +195,6 @@
 .main-button:hover {
   color: black;
   transform: translateY(-5px);
-}
-
-.main-button a {
-  position: relative;
-  z-index: 1;
 }
 
 .card-section {
@@ -438,6 +441,10 @@ textarea {
   color: var(--white-color);
   font-size: 18px;
 }
+.form-row input::placeholder , .form-row textarea::placeholder {
+  color: var(--main-color); 
+}
+
 
 textarea {
   min-height: 200px;
@@ -566,8 +573,8 @@ textarea {
   }
 
   .about_container img {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     margin-bottom: 20px;
   }
 
@@ -619,6 +626,25 @@ textarea {
     display: flex;
     justify-content: space-evenly;
   }
+  .footer{
+    display: none;
+  }
+}
+
+.footer{
+  background: black;
+   padding : 15px;
+   width : '100%';
+}
+.footer-item{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+}
+
+.footer-item p{
+  color: var(--white-color);
 }
 
 
