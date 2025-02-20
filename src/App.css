@@ -157,8 +157,10 @@
 }
 
 .main-button a {
+  position: relative;
   font-size: 18px;
   text-decoration: none;
+  
 
 }
 
@@ -190,6 +192,7 @@
 
 .main-button:hover::before {
   top: 0;
+  
 }
 
 .main-button:hover {
@@ -283,7 +286,8 @@
 /* skills section  */
 
 .skills-container {
-  padding: 2rem;
+  padding-left: 22px;
+  padding-right: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -569,6 +573,7 @@ textarea {
 
   .about_container {
     flex-wrap: wrap;
+    justify-content: center;
 
   }
 
@@ -602,6 +607,7 @@ textarea {
 
   .contact-form {
     width: 100%;
+    margin-bottom: 40px;
   }
 
   .form-row {
@@ -611,6 +617,9 @@ textarea {
   .contact-info {
     margin-left: 22px;
     width: 100%;
+  }
+  .alert{
+    font-size: 13px;
   }
 
   .hero-container {

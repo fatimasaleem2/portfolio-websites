@@ -112,7 +112,7 @@ const ContactUs = () => {
             </div>
             <div className='footer'>
                 <div className='footer-item' >
-                    <p>© fatima-saleem-portfolio.com</p>
+                    <p>© fatima-saleem-portfolio-9ae4d.web.app</p>
                     <div className='line'>
                       |
                     </div>
